@@ -102,14 +102,45 @@ Confidence Level: `★★★★☆`
 
 ## Demo
 
-Add pets, create tasks, and click `Generate schedule` to see the sorted daily plan and any conflict warnings. The seeded demo data includes brown bears named Kodiak and Maple to keep the assignment a little more memorable without changing the required architecture.
+This demo uses a light Alaska brown bear / modern Goldilocks theme to make the sample data more memorable while keeping the required scheduler structure intact.
 
-<img width="901" height="770" alt="image" src="https://github.com/user-attachments/assets/48c41ad7-9957-4a14-96d0-d455c2e1c141" />
-<img width="1063" height="863" alt="image" src="https://github.com/user-attachments/assets/d62df43b-09d6-4154-9708-f7cd6172c2ad" />
-<img width="782" height="695" alt="image" src="https://github.com/user-attachments/assets/ff25d3b0-e875-4c9f-add2-b1a8c35f762a" />
-<img width="762" height="774" alt="image" src="https://github.com/user-attachments/assets/4d62940b-5ee4-4fc1-bccb-905cffbecf94" />
+### Demo Flow
 
+1. Start with the seeded pets `Kodiak` and `Maple`, or add a new pet from the UI.
+2. Create a task with a time, duration, priority, and frequency.
+3. Click `Generate schedule` to build the daily plan.
+4. Review the sorted task table, explanation captions, and any conflict warnings.
 
+### What The Screenshots Show
+
+- Owner profile and daily time budget setup
+- Adding pets and themed care tasks from the Streamlit form
+- A generated schedule sorted by time and priority
+- Conflict warnings when two tasks share the same start time
+
+### App Screens
+
+**1. Owner setup and seeded pet data**
+
+<img width="901" height="770" alt="PawPal owner setup and seeded brown bear data" src="https://github.com/user-attachments/assets/48c41ad7-9957-4a14-96d0-d455c2e1c141" />
+
+**2. Adding a new pet and task**
+
+<img width="1063" height="863" alt="PawPal form for adding a pet and scheduling a task" src="https://github.com/user-attachments/assets/d62df43b-09d6-4154-9708-f7cd6172c2ad" />
+
+**3. Generated daily schedule**
+
+<img width="782" height="695" alt="PawPal generated daily schedule table" src="https://github.com/user-attachments/assets/ff25d3b0-e875-4c9f-add2-b1a8c35f762a" />
+
+**4. Conflict warning example**
+
+<img width="762" height="774" alt="PawPal warning showing a same-time task conflict" src="https://github.com/user-attachments/assets/4d62940b-5ee4-4fc1-bccb-905cffbecf94" />
+
+### Notes
+
+I manually tested the app by adding pets, creating tasks, generating a schedule, and confirming that same-time tasks produce a warning in the UI. I also verified the backend behavior separately through `main.py` and the automated pytest suite.
+
+I tested adding a pet, creating tasks, generating a schedule, and verifying conflict warnings.
 
 
 
